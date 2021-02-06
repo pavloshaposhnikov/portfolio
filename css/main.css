@@ -253,10 +253,11 @@ ul, li {
 ==========================*/
 
 .home__inner {
+    margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     min-height: 800px;
     max-width: 1320px;
-    margin: 0 auto;
 }
 
 .home__left-block {
@@ -265,8 +266,8 @@ ul, li {
 }
 
 .home__content {
-    position: relative;
     margin-top: 250px;
+    position: relative;
 }
 
 .home__content::before {
@@ -281,16 +282,16 @@ ul, li {
 }
 
 .home__title {
-    position: relative;
     margin-bottom: 15px;
+    position: relative;
     font-size: 46px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .home__subtitle {
-    position: relative;
     margin-bottom: 30px;
+    position: relative;
     font-size: 22px;
 }
 
@@ -744,9 +745,15 @@ a.scroll-up:hover {
     }
 
     .nav.show {
+        padding-top: 70px;
         display: flex;
-        width: 100%;
-        padding: 35px 45px 0px;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 115vw;
+        font-size: 30px;
+        background-color: #dddddd;
+        text-align: center;
     }
 
     .nav_link {
@@ -768,6 +775,7 @@ a.scroll-up:hover {
     
     .nav__item {
         margin-right: 0px;
+        padding-bottom: 5px;
     }
 
     .about__card-top {
@@ -825,19 +833,19 @@ a.scroll-up:hover {
         width: 80%;
     }
 
-    .sidebar__content::before {
-        top: -40%;
+    .home__content::before {
+        top: -20%;
     }
 
-    .header__aside::before {
-        width: 125px;
+    .home__right-block::before {
+        display: none;
     }
 
-    .header__buttons {
+    .home__buttons {
         display: block;
     }
 
-    .header__buttons a {
+    .home__buttons a {
         margin-bottom: 15px;
         width: 170px;
     }
@@ -869,20 +877,12 @@ a.scroll-up:hover {
 }
 
 @media (max-width: 690px) {
-    .header__sidebar {
-        width: 100%;
-    }
-
-    .header__aside {
-        background-color: #fff;
-    }
-
-    .nav.show {
-        padding: 50px 15px 0px;
-    }
-
     .nav-toggle {
         padding: 0px;
+    }
+
+    .home__block-inner {
+        background: none;
     }
 }
 
@@ -892,15 +892,35 @@ a.scroll-up:hover {
         width: 400px;
     }
 
-    .header__aside::before {
+    .home__right-block::before {
         display: none;
     }
     
     .portfolio__overlay {
         height: 325px;
     }
+
+    a.scroll-up {
+        right: 40px;
+    }
 }
 
-@media (max-width: 414px) {
-    
+@media (max-width: 560px) {
+    .home__right-block {
+        display: none;
+    }
+
+    .home__left-block {
+        width: 100%;
+    }
+
+    .home__content::before {
+        width: 1078px;
+    }
+
+    .footer__content {
+        margin: 45px auto;
+        width: 300px;
+    }
+
 }
