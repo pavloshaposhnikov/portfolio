@@ -34,7 +34,7 @@ ul, li {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #000000;
+    color: #000;
 }
 
 .title::before {
@@ -57,7 +57,7 @@ ul, li {
     align-items: center;
     width: 145px;
     height: 50px;
-    color: #ffffff;
+    color: #fff;
     border: 1px solid transparent;
     background-color: #212121;
     font-weight: 500;
@@ -97,6 +97,7 @@ ul, li {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 99;
 }
 
 .header__inner {
@@ -254,9 +255,11 @@ ul, li {
 .home__inner {
     display: flex;
     min-height: 800px;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
-.home__side {
+.home__left-block {
     margin-top: 45px;
     width: 55%;
 }
@@ -264,11 +267,10 @@ ul, li {
 .home__content {
     position: relative;
     margin-top: 250px;
-    padding-left: 145px;
 }
 
 .home__content::before {
-    left: -573px;
+    left: -737px;
     content: "";
     position: absolute;
     top: -60%;
@@ -299,28 +301,32 @@ ul, li {
     position: relative;
 }
 
-.home__aside {
-    padding-top: 52px;
+.home__right-block {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 45%;
     background-color: #dddddd;
+    min-height: 800px;
 }
 
-.home__aside::before {
+.home__right-block::before {
     content: "";
     position: absolute;
     width: 230px;
     height: 380px;
     background-color: transparent;
-    border: 13px solid #ffffff;
+    border: 13px solid #fff;
     border-right: 0;
     right: 0px;
     top: 280px;
 }
 
-.home__aside-inner {
+.home__block-inner {
+    margin-top: 43px;
     position: relative;
     background: url(../img/header/bg.png) no-repeat;
-    background-position: center top;
+    background-position: left top;
     height: 756px;
 }
 
@@ -459,7 +465,7 @@ ul, li {
 }
 
 .skills__item:hover .skill__title {
-    color: #000000;
+    color: #000;
 }
 
 .skills__item:hover .fa-star {
@@ -573,7 +579,7 @@ ul, li {
 }
 
 .overlay__title:hover {
-    color: #000000;
+    color: #000;
     opacity: 1;
 }
 
@@ -602,7 +608,7 @@ ul, li {
 
 .overlay__links p {
     margin-bottom: 10px;
-    color: #000000;
+    color: #000;
     font-size: 18px;
     font-weight: 500;
 }
