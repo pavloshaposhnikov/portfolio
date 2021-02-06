@@ -335,8 +335,8 @@ ul, li {
 ==========================*/
 
 .about {
-    height: 800px;
-    padding-top: 400px;
+    height: 783px;
+    padding-top: 470px;
 }
 
 .about__inner {
@@ -355,10 +355,6 @@ ul, li {
 
 .about__card .title::before {
     width: 90px;
-}
-
-.about__card-front {
-    padding-top: 106px;
 }
 
 .about__card-front .title::before {
