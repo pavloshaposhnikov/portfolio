@@ -38,7 +38,7 @@ ul, li {
 }
 
 .title::before {
-    content: url(/img/about/border.png);
+    content: url(../img/about/border.png);
     width: 140px;
     height: 6px;
     position: absolute;
