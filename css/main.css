@@ -626,7 +626,7 @@ ul, li {
 
 .footer__inner {
     margin: 0 auto;
-    width: 500px;
+
     text-align: center;
 }
 
@@ -750,7 +750,7 @@ a.scroll-up:hover {
         top: 0;
         right: 0;
         width: 100vw;
-        height: 115vw;
+        height: 225vw;
         font-size: 30px;
         background-color: #dddddd;
         text-align: center;
@@ -901,7 +901,7 @@ a.scroll-up:hover {
     }
 
     a.scroll-up {
-        right: 40px;
+        right: 30px;
     }
 }
 
@@ -915,12 +915,62 @@ a.scroll-up:hover {
     }
 
     .home__content::before {
-        width: 1078px;
+        width: 1000px;
+    }
+
+    .portfolio__overlay {
+        height: 285px;
     }
 
     .footer__content {
         margin: 45px auto;
         width: 300px;
     }
+}
 
+@media (max-width: 414px) {
+    
+    .home__inner {
+        padding: 0 5px;
+    }
+
+    .about {
+        height: 830px;
+    }
+    
+    .about__card {
+        height: 580px;
+    }
+
+    .card__content {
+        padding: 85px 55px;
+        width: 345px;
+    }
+
+    .skill__experience {
+        display: none;
+    }
+
+    .portfolio__overlay {
+        height: 220px;
+    }
+}
+
+@media (max-width: 414px) {
+    
+    .container {
+        padding: 0 5px;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .home__buttons {
+        width: auto;
+    }
+
+    .skill__title {
+        font-size: 18px;
+    }
 }
