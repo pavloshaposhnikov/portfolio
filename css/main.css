@@ -929,7 +929,6 @@ a.scroll-up:hover {
 }
 
 @media (max-width: 414px) {
-    
     .home__inner {
         padding: 0 5px;
     }
@@ -957,13 +956,8 @@ a.scroll-up:hover {
 }
 
 @media (max-width: 414px) {
-    
     .container {
         padding: 0 5px;
-    }
-
-    .about {
-        display: none;
     }
 
     .home__buttons {
@@ -972,5 +966,22 @@ a.scroll-up:hover {
 
     .skill__title {
         font-size: 18px;
+    }
+
+    .footer__content {
+        width: auto;
+    }
+}
+
+@media (max-width: 328px) {
+    .about {
+        padding-top: 405px;
+    }
+
+    .about__card {
+        height: 650px;
+    }
+    .card__content {
+        width: 300px;
     }
 }
