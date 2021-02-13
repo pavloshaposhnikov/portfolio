@@ -38,7 +38,7 @@ ul, li {
 }
 
 .title::before {
-    content: url(../img/about/border.png);
+    content: url(/img/about/border.png);
     width: 140px;
     height: 6px;
     position: absolute;
@@ -630,11 +630,6 @@ ul, li {
     text-align: center;
 }
 
-.footer__inner a {
-    margin: 0 auto 45px;
-    width: 190px;
-}
-
 .footer__inner i {
     margin-top: 25px;
 }
@@ -645,6 +640,11 @@ ul, li {
 
 .footer__content {
     margin-top: 40px;
+}
+
+.footer__content a {
+    margin: 0 auto 45px;
+    width: 190px;
 }
 
 .footer__text {
@@ -662,8 +662,15 @@ ul, li {
     margin: 0 auto;
 }
 
-.footer__social-icon i {
+.footer__social-icon {
     margin-right: 45px;
+}
+
+.footer__social-icon:last-child {
+    margin-right: 0;
+}
+
+.footer__social-icon i {
     font-size: 35px;
 }
 
@@ -953,9 +960,7 @@ a.scroll-up:hover {
     .portfolio__overlay {
         height: 220px;
     }
-}
 
-@media (max-width: 414px) {
     .container {
         padding: 0 5px;
     }
