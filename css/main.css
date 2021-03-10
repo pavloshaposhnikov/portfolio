@@ -43,6 +43,7 @@ ul, li {
     height: 6px;
     position: absolute;
     margin-top: 25px;
+    left: calc(50% - 140px / 2);
 }
 
 .text {
@@ -248,6 +249,10 @@ ul, li {
     transform-origin: 15% 95%;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /*========================
         Home 
 ==========================*/
@@ -356,6 +361,7 @@ ul, li {
 
 .about__card .title::before {
     width: 90px;
+    left: calc(50% - 90px / 2);
 }
 
 .about__card-front .title::before {
@@ -626,7 +632,6 @@ ul, li {
 
 .footer__inner {
     margin: 0 auto;
-
     text-align: center;
 }
 
@@ -636,6 +641,7 @@ ul, li {
 
 .footer__inner .title::before {
     width: 124px;
+    left: calc(50% - 124px / 2);
 }
 
 .footer__content {
@@ -733,8 +739,6 @@ a.scroll-up:hover {
     .title {
         font-size: 40px;
     }
-
-
 }
 
 @media (max-width: 991px) {
@@ -761,6 +765,7 @@ a.scroll-up:hover {
         font-size: 30px;
         background-color: #dddddd;
         text-align: center;
+        opacity: 0.95;
     }
 
     .nav_link {
@@ -794,6 +799,10 @@ a.scroll-up:hover {
         padding: 40px 65px;
     }
 
+    .skill__img {
+        filter: grayscale(0);
+    }
+
     .portfolio__overlay:nth-child(odd) {
         width: 750px; 
     }
@@ -813,6 +822,14 @@ a.scroll-up:hover {
 
     .skill__rank {
         font-size: 18px;
+    }
+
+    .skills__item .fa-star {
+        color: #ffd800;
+    }
+
+    .skill__experience .grey-star {
+        color: #dfdfdf;
     }
 }
 
