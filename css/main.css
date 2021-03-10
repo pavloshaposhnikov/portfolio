@@ -994,7 +994,7 @@ a.scroll-up:hover {
     }
 }
 
-@media (max-width: 328px) {
+@media (max-width: 350px) {
     .about {
         padding-top: 405px;
     }
