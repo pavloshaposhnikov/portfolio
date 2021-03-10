@@ -61,3 +61,15 @@ $(function() {
   
               nav.toggleClass("show");
           });
+
+          $('.nav-toggle').on('click', function(event){
+            $('.nav-toggle').toggleClass('opened');
+            $('#body').toggleClass('no-scroll');
+          });
+          
+          $('.nav__link').on('click', function(event){
+            $('#body').removeClass('no-scroll');
+            $('.nav').removeClass('show');
+            $('.nav-toggle').removeClass('opened');
+          });
+          
