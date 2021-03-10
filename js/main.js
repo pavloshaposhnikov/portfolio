@@ -63,7 +63,6 @@ $(function() {
           });
 
           $('.nav-toggle').on('click', function(event){
-            $('.nav-toggle').toggleClass('opened');
             $('#body').toggleClass('no-scroll');
           });
           
