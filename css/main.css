@@ -201,7 +201,8 @@ ul, li {
 }
 
 .nav-toggle {
-    padding: 10px 0;
+    margin: 15px 0;
+    padding: 10px;
     position: relative;
     text-align: right;
     background: transparent;
