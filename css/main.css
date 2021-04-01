@@ -535,9 +535,6 @@ ul, li {
     width: 147px;
 }
 
-.portfolio__item {
-    margin-bottom: 90px;
-}
 
 .hidden {
     display: none;
@@ -617,7 +614,7 @@ ul, li {
 }
 
 .portfolio__btn {
-    margin: 0 auto;
+    margin: 55px auto 0;
     width: 190px;
 }
 
